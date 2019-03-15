@@ -12,11 +12,15 @@
  * limitations under the License.
  */
 
+"use strict";
+
 /**
  * A shipment has been received by an importer
  * @param {org.acme.shipping.perishable.ShipmentReceived} shipmentReceived - the ShipmentReceived transaction
  * @transaction
  */
+
+
 function payOut(shipmentReceived) {
 
     var contract = shipmentReceived.shipment.contract;
@@ -195,7 +199,7 @@ function gpsReading(gpsReading) {
     var latLong = '/LAT:' + gpsReading.latitude + gpsReading.latitudeDir + '/LONG:' +
     gpsReading.longitude + gpsReading.longitudeDir;
 
-    if (latLong == PORT_OF_NEW_YORK) {
+    if (latLong === PORT_OF_NEW_YORK) {
         var shipmentInPortEvent = factory.newEvent(NS, 'ShipmentInPortEvent');
         shipmentInPortEvent.shipment = shipment;
         var message = 'Shipment has reached the destination port of ' + PORT_OF_NEW_YORK;
