@@ -18,7 +18,7 @@
  * @transaction
  */
 
-/* eslint no-tabs: ["error", { allowIndentationTabs: true }] */
+
 function payOut(shipmentReceived) {
 
     var contract = shipmentReceived.shipment.contract;
