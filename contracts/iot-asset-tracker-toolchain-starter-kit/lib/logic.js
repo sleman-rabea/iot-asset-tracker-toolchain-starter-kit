@@ -11,12 +11,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
+"use strict";
 /**
  * A shipment has been received by an importer
  * @param {org.acme.shipping.perishable.ShipmentReceived} shipmentReceived - the ShipmentReceived transaction
  * @transaction
  */
+
+/* eslint no-tabs: ["error", { allowIndentationTabs: true }] */
 function payOut(shipmentReceived) {
 
     var contract = shipmentReceived.shipment.contract;
