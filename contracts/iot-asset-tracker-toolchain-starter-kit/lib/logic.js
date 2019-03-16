@@ -160,7 +160,7 @@ function AccelReading(AccelReading) {
         AccelerationEvent.accel_x = AccelReading.accel_x;
         AccelerationEvent.accel_y = AccelReading.accel_y;
         AccelerationEvent.accel_z = AccelReading.accel_z;
-	    AccelerationEvent.latitude = AccelReading.latitude;
+        AccelerationEvent.latitude = AccelReading.latitude;
         AccelerationEvent.longitude = AccelReading.longitude;
         AccelerationEvent.readingTime = AccelReading.readingTime;
         AccelerationEvent.message = 'Acceleration threshold violated! Emitting AccelerationEvent for shipment: ' + shipment.$identifier;
